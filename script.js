@@ -128,7 +128,7 @@ function vsComputer() {
 
   if (sideX.classList.contains("selected")) {
     if (moveCount === 0) {
-      headerTitle.textContent = "Bắt đầu trò chơi hoặc chọn người chơi aaaa";
+      headerTitle.textContent = "Bắt đầu trò chơi hoặc chọn người chơi";
     } else {
       headerTitle.textContent = "Lượt của X";
     }
