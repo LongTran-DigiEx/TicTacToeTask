@@ -1,0 +1,64 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>TicTacToe Game</title>
+      <link rel="stylesheet" href="styles/style.css" />
+    </head>
+    <body>
+      <div class="container">
+        <!-- Choose side -->
+        <header>
+          <select id="header-mode" class="header-mode" name="tictactoe">
+            <option id="computer" value="computer">Vs Computer</option>
+            <option id="pvp" value="pvp">PvP</option>
+          </select>
+          <div class="selector-header">
+            <div id="side-X-selection" class="side-selection selected">
+              <div id="side-X" class="side">X</div>
+              <div id="side-X-score" class="side-score">-</div>
+            </div>
+            <div id="side-O-selection" class="side-selection">
+              <div id="side-O" class="side">O</div>
+              <div id="side-O-score" class="side-score">-</div>
+            </div>
+          </div>
+          <div id="header-title" class="header-title"></div>
+        </header>
+
+        <!-- Content Game -->
+        <main class="game-container">
+          <!-- Game box -->
+          <div id="game" class="game">
+            <div class="game-box"></div>
+            <div class="game-box"></div>
+            <div class="game-box"></div>
+            <div class="game-box"></div>
+            <div class="game-box"></div>
+            <div class="game-box"></div>
+            <div class="game-box"></div>
+            <div class="game-box"></div>
+            <div class="game-box"></div>
+
+            <!-- Result Banner -->
+            <div id="result-win" class="result hide">
+              <div id="winner" style="font-size: 60px; color: bisque"></div>
+              <div>Chiến thắng!</div>
+            </div>
+
+            <div id="result-draw" class="result hide">
+              <div style="font-size: 60px; color: bisque">X - O</div>
+              <div>Hòa!</div>
+            </div>
+          </div>
+        </main>
+
+        <!-- Restart Game -->
+        <div class="restart">
+          <div id="reset" class="confirm-btn">Restart Game</div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </body>
+  </html>
